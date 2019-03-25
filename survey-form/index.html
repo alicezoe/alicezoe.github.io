@@ -13,9 +13,12 @@
     <h1 id="title">Survey form</h1>
     <p id="description">What is this survey about?</p>
         <form id="survey-form"></form>
-            Name: <input type="text" name="name" id="name" placeholder="Enter your name" autofocus>
-            Email address: <input type="text" name="email" id="email" placeholder="Enter your email" required>
-            Age: <input type="number" id="number" min="1" max="100" placeholder="Age">
+            <label id="name-label" for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" autofocus>
+            <label id="email-label" for="email">Email address:</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email" required>
+            <label id="number-label" for="number">Age:</label>
+                <input type="number" id="number" min="1" max="100" placeholder="Age">
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
