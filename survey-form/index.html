@@ -2,12 +2,15 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre" rel="stylesheet">
-  <title>Podcasts Survey</title>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre" rel="stylesheet">
+    <title>Podcasts Survey</title>
   <style>
     html, body{
+      background: linear-gradient(35deg,#CCFFFF, #FFCCCC);
       font-family: 'Proza Libre', sans-serif;
       font-size: 25px;
+      color: ivory;
+      text-transform: uppercase;
     }
     #main{
       margin: 30px, auto;
@@ -17,12 +20,15 @@
     h1 {
       margin: auto;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 80px;
+      font-size: 120px;
     }
     p{
-      font-size: 40px;
+      font-size: 35px;
+      text-transform: uppercase;
     }
-    
+    label{
+
+    }
   </style>
 </head>
 
@@ -32,15 +38,15 @@
    <p id="description">What are your podcasting habits?</p>
     <form id="survey-form">
      <div class="rowtab">
-      <label id="name-label" for="name">Name:</label>
+      <label id="name-label" for="name">Name :</label>
        <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required>
      </div>
      <div class="rowtab">
-      <label id="email-label" for="email">Email address:</label>
+      <label id="email-label" for="email">Email address :</label>
        <input type="text" name="email" id="email" placeholder="Enter your email" required>
      </div>
      <div class="rowtab">
-      <label id="number-label" for="number">Age:</label>
+      <label id="number-label" for="number">Age :</label>
        <input type="number" id="number" min="1" max="100" placeholder="Age">
      </div>
      <div class="rowtab">
