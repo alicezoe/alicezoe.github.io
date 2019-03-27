@@ -26,8 +26,14 @@
       font-size: 35px;
       text-transform: uppercase;
     }
-    label{
-
+    input{
+        border-radius: 0%;
+        border: none;
+    }
+    button{
+      border-radius: 25px;
+      border: none;
+      padding: 15px;
     }
   </style>
 </head>
@@ -50,7 +56,11 @@
        <input type="number" id="number" min="1" max="100" placeholder="Age">
      </div>
      <div class="rowtab">
-      <label for="category"><input id="category-check" type="checkbox" name="category-check"> Which category do you listen to the most?</label>
+      <label for="category">Which category do you listen to the most?</label>
+        <input id="category-check" type="checkbox" name="category-check">
+     </div>
+     <div class="button">
+       <button type="submit">Submit</button>
      </div>
     </form>
  </div>
