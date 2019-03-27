@@ -27,13 +27,18 @@
       text-transform: uppercase;
     }
     input{
-        border-radius: 0%;
+        border-radius: 25px;
         border: none;
+        padding: 10px;
+        margin-top: 15px;
     }
     button{
       border-radius: 25px;
       border: none;
       padding: 15px;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: 'Proza Libre', sans-serif;
     }
   </style>
 </head>
@@ -59,6 +64,10 @@
       <label for="category">Which category do you listen to the most?</label>
         <input id="category-check" type="checkbox" name="category-check">
      </div>
+     <div class="rowtab">
+            <label id="comments-label" for="comments">Anything you would like to add?</label>
+              <input type="text" name="comments" id="comments" placeholder="Enter your comments here">
+           </div>
      <div class="button">
        <button type="submit">Submit</button>
      </div>
