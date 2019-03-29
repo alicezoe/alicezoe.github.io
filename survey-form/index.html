@@ -6,7 +6,7 @@
     <title>Podcasts Survey</title>
   <style>
     html, body{
-      background: linear-gradient(35deg,#CCFFFF, #FFCCCC);
+      background: linear-gradient(35deg,#00a5a5, #ffa5a5);
       font-family: 'Proza Libre', sans-serif;
       font-size: 25px;
       color: ivory;
@@ -15,12 +15,11 @@
     #main{
       margin: 30px, auto;
       padding: 30px;
-      text-align: center;
     }
     h1 {
       margin: auto;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 120px;
+      font-size: 100px;
     }
     p{
       font-size: 35px;
@@ -28,15 +27,23 @@
       margin-top: 15px;
     }
     input{
-        border-radius: 25px;
-        border: none;
-        padding: 10px;
-        margin-top: 15px;
+      border-radius: 25px;
+      border: none;
+      padding: 10px;
+      margin-top: 15px;
+    }
+    .input-field{
+      height: 56px;
+      width: 280px;
+      resize: vertical;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     button{
       border-radius: 25px;
       border: none;
       padding: 15px;
+      margin-top: 20px;
       font-size: 20px;
       text-transform: uppercase;
       font-family: 'Proza Libre', sans-serif;
@@ -66,11 +73,13 @@
         <input id="category-check" type="checkbox" name="category-check">
      </div>
      <div class="rowtab">
-      <label id="comments-label" for="comments">Anything you would like to add?</label>
-        <input type="text" name="comments" id="comments" placeholder="Enter your comments here">
+      <label for="comments">Anything you would like to add?</label>
+       <div> 
+        <input id="comments" class="input-field" placeholder="Enter your comments here">
+       </div> 
      </div>
      <div class="button">
-       <button type="submit">Submit</button>
+       <button id="submit">Submit</button>
      </div>
     </form>
  </div>
