@@ -3,7 +3,7 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre" rel="stylesheet">
-    <title>Podcasts Survey</title>
+  <title>Podcasts Survey</title>
   <style>
     html, body{
       background: linear-gradient(35deg,#00a5a5, #ffa5a5);
@@ -22,7 +22,7 @@
       font-size: 100px;
     }
     p{
-      font-size: 35px;
+      font-size: 30px;
       text-transform: uppercase;
       margin-top: 15px;
     }
@@ -36,8 +36,7 @@
       height: 56px;
       width: 280px;
       resize: vertical;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin: 10px, 10px, 10px, 10px;
     }
     button{
       border-radius: 25px;
@@ -72,13 +71,13 @@
       <label for="category">Which category do you listen to the most?</label>
         <input id="category-check" type="checkbox" name="category-check">
      </div>
-     <div class="rowtab">
+     <div class="rowtab" style="text-align: right">
       <label for="comments">Anything you would like to add?</label>
        <div> 
         <input id="comments" class="input-field" placeholder="Enter your comments here">
        </div> 
      </div>
-     <div class="button">
+     <div class="button" style="text-align: center">
        <button id="submit">Submit</button>
      </div>
     </form>
