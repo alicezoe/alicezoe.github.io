@@ -6,20 +6,19 @@
   <title>Podcasts Survey</title>
   <style>
     html, body{
-      background: linear-gradient(35deg,#2D4345, #301F1F);
+      background: linear-gradient(35deg, #c63d3d, #ffccc6);
       font-family: 'Proza Libre', sans-serif;
       font-size: 25px;
-      color: ivory;
       text-transform: uppercase;
     }
-    #main{
-      margin: 30px, auto;
-      padding: 30px;
+    #form-outer{
+      background-color: ivory;
     }
     h1 {
       margin: auto;
       font-family: 'Cormorant Garamond', serif;
       font-size: 100px;
+      color: ivory;
     }
     p{
       font-size: 30px;
@@ -51,8 +50,8 @@
 </head>
 
 <body>
- <div id="main">
-  <h1 id="title">Podcasts</h1>
+ <h1 id="title">Podcasts</h1>
+  <div id="form-outer">
    <p id="description">What are your podcasting habits?</p>
     <form id="survey-form">
      <div class="rowtab">
@@ -77,11 +76,10 @@
        <div> 
         <textarea id="comments" class="input-field" placeholder="Enter your comments here"></textarea>
        </div> 
-     </div>
-       <button id="submit">Submit</button>
+      <button id="submit">Submit</button>
     </form>
- </div>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </body>
 
