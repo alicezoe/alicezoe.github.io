@@ -12,7 +12,7 @@
       background-color: #cccccc;
       min-width: 320px;
       font-family: 'Proza Libre', sans-serif;
-      font-size: 20px;
+      font-size: 26px;
       color: #fcfcfc;
       text-transform: uppercase;
       text-align: center;
@@ -21,40 +21,69 @@
     h1{
       font-family: 'Cormorant Garamond', serif;
       font-size: 100px;
+      margin: auto;
+      min-width: 320px; 
     }
     p{
       font-size: 25px;
       text-transform: uppercase;
       margin-top: 15px;
     }
+    label{
+      display: block;
+      padding-top: 30px;
+    }
+      .label-text{
+        transform: translateY(-34px);
+        cursor: text;
+        transition: all 0.3s;
+        line-height: 8px;
+      }
     input{
-      border-radius: 5px;
-      padding: 10px;
-      margin-top: 15px;
-    }
-    .radio{
-      list-style: none;
-      border-radius: 50%;
-      transition: 0.2s all linear;
-      outline: none;
-    }
-    .input-field{
-      height: 56px;
-      width: 280px;
-      border-radius: 5px;
-      resize: vertical;
-      margin: 10px;
+      background-color: transparent;
       border: none;
+      border-bottom: 2px solid white;
+      outline: none;
+      color: white;
+      transition: all 0.3s;
+      padding: 5px 20px;
+      width: 250px;
+      font-size: 18px;
+    }
+      input:focus{
+        max-width: 100%;
+        width: 320px;
+      }
+        input:focus +.label-text{
+          transform: translateY(-74px);
+          font-size: 13px;
+        }
+          input:valid +.label-text{
+            font-size: 13px;
+            transform: translateY(-74px);
+          }
+    input[type="number"]{
+      width: 50px;
+    }
+      input[type="number"]:focus{
+        width: 75px;
+      }
+    input::placeholder{
+      color: transparent;
     }
     button{
       border-radius: 5px;
       padding: 12px;
       margin-top: 20px;
+      background-color: white;
       font-size: 18px;
       text-transform: uppercase;
       font-family: 'Cormorant Garamond', sans-serif;
-      background: #fcfcfcce;
+      cursor: pointer;
     }
+      button:hover, :focus{
+        color: white;
+      }
   </style>
 </head>
 
@@ -62,10 +91,7 @@
   <h1 id="title">Podcasts</h1>
     <p id="description">What are your podcasting habits?</p>
       <form id="survey-form">
-        <div class="rowtab">
-          <label for="recommend">Would you recommend podcasts to a friend?</label>
-        </div>
-        <div class="rowtab">
+        <label for="recommend">Would you recommend podcasts to a friend?</label>
           <li class="radio">
             <input type="radio" id="choice1" name="recommend" value="Definitely" checked>
             <label for="choice1">Definitely</label>
@@ -78,30 +104,23 @@
             <input type="radio" id="choice3" name="recommend" value="Unsure">
             <label for="choice3">Unsure</label>
           </li>
-        </div>
-        <div class="rowtab">
-          <label for="category">Which category do you listen to the most? (check all that apply)</label>
-        </div>
-        <div>
+        <label for="category">Which category do you listen to the most? (check all that apply)</label>
           <input id="category-check" type="checkbox" name="category-check">
-        </div>
-        <div class="rowtab">
-          <label for="comments">Anything you would like to add?</label>
-        <div> 
+        <label for="comments">Anything you would like to add?>
           <textarea id="comments" class="input-field" placeholder="Enter your comments here"></textarea>
-        </div>
-        <div class="rowtab">
-          <label id="name-label" for="name">Name :</label>
-          <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required>
-        </div>
-        <div class="rowtab">
-          <label id="email-label" for="email">Email address :</label>
-          <input type="text" name="email" id="email" placeholder="Enter your email" required>
-        </div>
-        <div class="rowtab">
-          <label id="number-label" for="number">Age :</label>
+        </label>
+        <label id="name-label">
+          <input type="text" id="name" placeholder="Enter your name" required>
+          <div class="label-text">Name</div>
+        </label>
+        <label id="email-label">
+          <input type="text" id="email" placeholder="Enter your email" required>
+          <div class="label-text">Email address</div>
+        </label>
+        <label id="number-label">
           <input type="number" id="number" min="1" max="100" placeholder="Age">
-        </div>
+          <div class="label-text">Age</div>
+        </label>
         <button id="submit">Submit</button>
       </form>
 
