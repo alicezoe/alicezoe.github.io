@@ -25,7 +25,7 @@
       min-width: 320px; 
     }
     p{
-      font-size: 25px;
+      font-size: 32px;
       text-transform: uppercase;
       margin-top: 15px;
     }
@@ -38,6 +38,33 @@
         cursor: text;
         transition: all 0.3s;
         line-height: 8px;
+      }
+    textarea{
+      display: block;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid white;
+      outline: none;
+      color: white;
+      transition: all 0.3s;
+      padding: 5px 20px;
+      width: 250px;
+      font-size: 18px;
+    }
+      textarea:focus{
+        max-width: 100%;
+        width: 320px;
+      }
+        textarea:focus +.label-text{
+          transform: translateY(-74px);
+          font-size: 13px;
+        }
+          textarea:valid +.label-text{
+            font-size: 13px;
+            transform: translateY(-74px);
+          }
+      textarea::placeholder{
+        color: transparent;
       }
     input{
       background-color: transparent;
@@ -63,16 +90,23 @@
             transform: translateY(-74px);
           }
     input[type="number"]{
-      width: 50px;
+      width: 40px;
+      font-size: 26px;
+      text-align: center;
     }
       input[type="number"]:focus{
-        width: 75px;
+        width: 65px;
+      }
+      input[type="number"]::-webkit-inner-spin-button, 
+      input[type="number"]::-webkit-outer-spin-button{ 
+        -webkit-appearance: none; 
+        margin: 0; 
       }
     input::placeholder{
       color: transparent;
     }
     button{
-      border-radius: 5px;
+      border-radius: 2.5px;
       padding: 12px;
       margin-top: 20px;
       background-color: white;
@@ -104,21 +138,23 @@
             <input type="radio" id="choice3" name="recommend" value="Unsure">
             <label for="choice3">Unsure</label>
           </li>
-        <label for="category">Which category do you listen to the most? (check all that apply)</label>
+        <label for="category">Which category do you listen to the most? (check all that apply)>
           <input id="category-check" type="checkbox" name="category-check">
-        <label for="comments">Anything you would like to add?>
-          <textarea id="comments" class="input-field" placeholder="Enter your comments here"></textarea>
+        </label>
+        <label for="comments">
+          <textarea id="comments" placeholder="Enter your comments here" required></textarea>
+          <div class="label-text">Name at least one podcast you listen to weekly (or more)</div>
         </label>
         <label id="name-label">
           <input type="text" id="name" placeholder="Enter your name" required>
           <div class="label-text">Name</div>
         </label>
         <label id="email-label">
-          <input type="text" id="email" placeholder="Enter your email" required>
+          <input type="email" id="email" placeholder="Enter your email" required>
           <div class="label-text">Email address</div>
         </label>
         <label id="number-label">
-          <input type="number" id="number" min="1" max="100" placeholder="Age">
+          <input type="number" id="number" min="1" max="100" placeholder="Age" required>
           <div class="label-text">Age</div>
         </label>
         <button id="submit">Submit</button>
