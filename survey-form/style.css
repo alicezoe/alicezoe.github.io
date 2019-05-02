@@ -1,0 +1,115 @@
+
+    html{
+    background: url("art-background-blue-1037992.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    body{
+      font-family: 'Proza Libre', sans-serif;
+      font-size: 26px;
+      color: #fcfcfc;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 2.5;
+    }
+    h1{
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 100px;
+      margin: auto;
+      min-width: 320px; 
+    }
+    p{
+      font-size: 32px;
+      text-transform: uppercase;
+      margin-top: 15px;
+    }
+    label{
+      display: block;
+      padding-top: 30px;
+    }
+      .label-text{
+        transform: translateY(-34px);
+        cursor: text;
+        transition: all 0.3s;
+        line-height: 8px;
+      }
+    textarea{
+      display: block;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid white;
+      outline: none;
+      color: white;
+      transition: all 0.3s;
+      padding: 5px 20px;
+      width: 250px;
+      font-size: 18px;
+    }
+      textarea:focus{
+        max-width: 100%;
+        width: 320px;
+      }
+        textarea:focus +.label-text{
+          transform: translateY(-74px);
+          font-size: 13px;
+        }
+          textarea:valid +.label-text{
+            font-size: 13px;
+            transform: translateY(-74px);
+          }
+      textarea::placeholder{
+        color: transparent;
+      }
+    input{
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid white;
+      outline: none;
+      color: white;
+      transition: all 0.3s;
+      padding: 5px 20px;
+      width: 250px;
+      font-size: 18px;
+    }
+      input:focus{
+        max-width: 100%;
+        width: 320px;
+      }
+        input:focus +.label-text{
+          transform: translateY(-74px);
+          font-size: 13px;
+        }
+          input:valid +.label-text{
+            font-size: 13px;
+            transform: translateY(-74px);
+          }
+    input[type="number"]{
+      width: 40px;
+      font-size: 26px;
+      text-align: center;
+    }
+      input[type="number"]:focus{
+        width: 65px;
+      }
+      input[type="number"]::-webkit-inner-spin-button, 
+      input[type="number"]::-webkit-outer-spin-button{ 
+        -webkit-appearance: none; 
+        margin: 0; 
+      }
+    input::placeholder{
+      color: transparent;
+    }
+    button{
+      border-radius: 15px;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: transparent;
+      font-size: 18px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+      button:hover, :focus{
+        background-color: white;
+      }
