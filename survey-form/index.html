@@ -6,18 +6,51 @@
     <title>Podcasts Survey</title>
   </head>
 
-<body>
-  <h1 id="title">Podcasts</h1>
-    <p id="description">What are your podcasting habits?</p>
-      <form id="survey-form">
-        <label for="role">Which option best describes your current professional role?</label>
-        <select id="dropdown">
-          <option disabled value>Select an option</option>
-          <option value="student">Student</option>
-          <option value=""></option>
-          <option></option>
-        </select>
-        <label for="recommend">Would you recommend podcasts to a friend?</label>
+  <body>
+    <h1 id="title">Podcasts</h1>
+      <p id="description">What are your podcasting habits?</p>
+        <form id="survey-form">
+          <label for="role">Which option best describes your current professional role?</label>
+          <select id="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="Student">Student</option>
+            <option value="Professional"></option>
+            <option value="Retired"></option>
+          </select>
+          <label for="recommend">Would you recommend podcasts to a friend?</label>
+            <li class="radio">
+              <input type="radio" id="choice1" name="recommend" value="Definitely" checked>
+              <label for="choice1">Definitely</label>
+            </li>
+            <li class="radio">
+              <input type="radio" id="choice2" name="recommend" value="Maybe">
+              <label for="choice2">Maybe</label>
+            </li>
+            <li class="radio">
+              <input type="radio" id="choice3" name="recommend" value="Unsure">
+              <label for="choice3">Unsure</label>
+            </li>
+          <label for="category">Which category do you listen to the most? (check all that apply)
+            <input id="category-check" type="checkbox" name="category-check">
+          </label>
+          <label for="comments">
+            <textarea id="comments" placeholder="Enter your comments here" required></textarea>
+            <div class="label-text">Name at least one podcast you listen to weekly (or more)              
+            </div>
+          </label>
+          <label id="name-label">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <div class="label-text">Name</div>
+          </label>
+          <label id="email-label">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <div class="label-text">Email address</div>
+          </label>
+          <label id="number-label">
+            <input type="number" id="number" min="1" max="100" placeholder="Age" required>
+            <div class="label-text">Age</div>
+          </label>
+          <label for="recommend">Would you recommend podcasts to a friend?</label>
           <li class="radio">
             <input type="radio" id="choice1" name="recommend" value="Definitely" checked>
             <label for="choice1">Definitely</label>
@@ -30,42 +63,10 @@
             <input type="radio" id="choice3" name="recommend" value="Unsure">
             <label for="choice3">Unsure</label>
           </li>
-        <label for="category">Which category do you listen to the most? (check all that apply)>
-          <input id="category-check" type="checkbox" name="category-check">
-        </label>
-        <label for="comments">
-          <textarea id="comments" placeholder="Enter your comments here" required></textarea>
-          <div class="label-text">Name at least one podcast you listen to weekly (or more)</div>
-        </label>
-        <label id="name-label">
-          <input type="text" id="name" placeholder="Enter your name" required>
-          <div class="label-text">Name</div>
-        </label>
-        <label id="email-label">
-          <input type="email" id="email" placeholder="Enter your email" required>
-          <div class="label-text">Email address</div>
-        </label>
-        <label id="number-label">
-          <input type="number" id="number" min="1" max="100" placeholder="Age" required>
-          <div class="label-text">Age</div>
-        </label>
-        <label for="recommend">Would you recommend podcasts to a friend?</label>
-        <li class="radio">
-          <input type="radio" id="choice1" name="recommend" value="Definitely" checked>
-          <label for="choice1">Definitely</label>
-        </li>
-        <li class="radio">
-          <input type="radio" id="choice2" name="recommend" value="Maybe">
-          <label for="choice2">Maybe</label>
-        </li>
-        <li class="radio">
-          <input type="radio" id="choice3" name="recommend" value="Unsure">
-          <label for="choice3">Unsure</label>
-        </li>
-        <button id="submit">Submit</button>
-      </form>
+          <button id="submit">Submit</button>
+        </form>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 
 </html>
