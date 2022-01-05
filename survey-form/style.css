@@ -103,16 +103,20 @@
                   color: transparent;
                 }
   button{
-    border-radius: 10px;
-    border-color: white;
-    padding: 12px;
-    margin-top: 20px;
     background-color: transparent;
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 14px 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
   }
     button:hover, :focus{
+      color: black;
       background-color: white;
     }
     
