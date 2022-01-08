@@ -25,6 +25,16 @@
     text-transform: uppercase;
     margin-top: 15px;
   }
+  select#dropdown {
+    font-family: inherit;
+    font-size: 22px;
+    color: inherit;
+    border: none;
+    background-color: inherit;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 20px 0px;
+  }
   label{
     display: block;
     padding-top: 30px;
@@ -57,8 +67,8 @@
         font-size: 13px;
       }
         textarea:valid +.label-text{
-          font-size: 13px;
           transform: translateY(-74px);
+          font-size: 13px;
         }
           textarea::placeholder{
             color: transparent;
